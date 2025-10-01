@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pravika | Full Stack Developer</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -454,6 +455,8 @@
         .project-links {
             display: flex;
             gap: 20px;
+            position: relative;
+            z-index: 10;
         }
 
         .project-link {
@@ -469,6 +472,9 @@
             color: #000;
             font-weight: bold;
             transition: all 0.3s ease;
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
         }
 
         .project-link:hover {
@@ -538,7 +544,7 @@
             justify-content: space-between;
             gap: 60px;
             max-width: 1200px;
-            margin: 120px auto 0;
+            margin: 40px auto 0;
         }
 
         .contact-animation {
@@ -590,12 +596,18 @@
             transform: scale(1.05);
         }
 
+        .email-link h3 {
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+
         .social-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             max-width: 600px;
             margin: 20px auto;
+            margin-bottom: 200px;
         }
 
         .social-item {
@@ -748,7 +760,7 @@
         }
 
         .form-group {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
@@ -928,7 +940,6 @@
 
             .email-link {
                 font-size: clamp(20px, 4vw, 28px);
-                margin-bottom: 40px;
             }
         }
 
@@ -965,11 +976,17 @@
                 padding: 0 10px;
             }
 
+            .email-link h3 {
+                margin-top: 60px;
+                margin-bottom: 15px;
+            }
+
             .social-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
                 max-width: 300px;
                 margin: 30px auto;
+                margin-bottom: 100px;
             }
 
             .social-item {
@@ -995,7 +1012,7 @@
             }
 
             .form-group {
-                margin-bottom: 25px;
+                margin-bottom: 18px;
             }
 
             .form-group label {
@@ -1198,8 +1215,7 @@
                         <img src="./images/PizzaImage.jpeg" alt="E-Commerce Platform" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo">🌐</a>
-                                <a href="#" class="project-link" title="Source Code">💻</a>
+                                <a href="https://github.com/Pravikaravi" class="project-link" title="Source Code" target="_blank" rel="noopener noreferrer">💻</a>
                             </div>
                         </div>
                     </div>
@@ -1219,8 +1235,7 @@
                         <img src="./images/UMS.jpg" alt="Task Management App" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo">🌐</a>
-                                <a href="#" class="project-link" title="Source Code">💻</a>
+                                <a href="https://github.com/Pravikaravi" class="project-link" title="Source Code" target="_blank" rel="noopener noreferrer">💻</a>
                             </div>
                         </div>
                     </div>
@@ -1240,8 +1255,7 @@
                         <img src="./images/Car.jpg" alt="Weather Dashboard" class="project-img">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link" title="Live Demo">🌐</a>
-                                <a href="#" class="project-link" title="Source Code">💻</a>
+                                <a href="https://github.com/Pravikaravi" class="project-link" title="Source Code" target="_blank" rel="noopener noreferrer">💻</a>
                             </div>
                         </div>
                     </div>
@@ -1264,27 +1278,30 @@
         <div class="contact-container">
             <h2>Let's Create Something Amazing</h2>
             <p>Have a project in mind? Let's collaborate and bring your vision to life.</p>
-            <a href="mailto:pravika@example.com" class="email-link">pravika@example.com</a>
+            
             <div class="social-grid">
-                <a href="#" class="social-item" title="LinkedIn">
+                
+                <a href="https://www.linkedin.com/in/pravika-ravi-34a55b246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-item" title="LinkedIn" target="_blank">
                     <span>in</span>
                 </a>
-                <a href="#" class="social-item" title="GitHub">
+                <a href="https://github.com/Pravikaravi" class="social-item" title="GitHub" target="_blank">
                     <span>GH</span>
                 </a>
-                <a href="#" class="social-item" title="Twitter">
+                <a href="https://x.com/PravikaRavi?t=rxcIgyXnZdgubAB_3cwjpQ&s=08" class="social-item" title="Twitter" target="_blank">
                     <span>𝕏</span>
                 </a>
-                <a href="#" class="social-item" title="Dribbble">
-                    <span>Db</span>
+                <a href="https://www.facebook.com/share/15RkHcR4G6/" class="social-item" title="Facebook" target="_blank">
+                    <span>Fb</span>
                 </a>
             </div>
+
+            <h3 class="email-link">Message to Pravika</h3>
 
             <!-- Contact Section with Animation and Form -->
             <div class="contact-flex-container">
                 <!-- Contact Animation -->
                 <div class="contact-animation">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="margin-top: -100px;">
                         <!-- Envelope Base -->
                         <rect x="40" y="70" width="120" height="80" fill="none" stroke="#00ffff" stroke-width="2" class="envelope-base"/>
                         
@@ -1413,6 +1430,11 @@
             }
         });
 
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("XANFQIFIh326iawQo"); // Your EmailJS Public Key
+        })();
+
         // Contact form submission
         const form = document.getElementById('contactForm');
         const popup = document.getElementById('popup');
@@ -1420,16 +1442,51 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Show popup
-            popup.classList.add('show');
+            // Get form data
+            const formData = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                to_email: "iampravika@gmail.com"
+            };
 
-            // Hide popup after 4 seconds
-            setTimeout(function() {
-                popup.classList.remove('show');
-            }, 4000);
+            // Send email using EmailJS
+            emailjs.send(
+                "service_q0nbid4", // Your EmailJS Service ID
+                "template_y5bmut9", // Your EmailJS Template ID
+                formData
+            ).then(
+                function(response) {
+                    
+                    // Show success popup
+                    popup.classList.add('show');
+                    popup.textContent = "Your message has been sent to Pravika successfully!";
 
-            // Reset form
-            form.reset();
+                    // Hide popup after 4 seconds
+                    setTimeout(function() {
+                        popup.classList.remove('show');
+                    }, 4000);
+
+                    // Reset form
+                    form.reset();
+                    
+                },
+                function(error) {
+                    console.error("Failed to send email:", error);
+                    
+                    // Show error popup
+                    popup.classList.add('show');
+                    popup.textContent = "Failed to send message. Please try again.";
+                    popup.style.background = "linear-gradient(135deg, #ef4444, #dc2626)";
+
+                    // Hide popup after 4 seconds
+                    setTimeout(function() {
+                        popup.classList.remove('show');
+                        popup.style.background = "linear-gradient(135deg, #10b981, #059669)";
+                        popup.textContent = "Your message has been sent to Pravika";
+                    }, 4000);
+                }
+            );
         });
     </script>
 </body>
